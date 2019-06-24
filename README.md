@@ -1,6 +1,3 @@
-# Mundi_NotebookUsage
-Mundi library and use case of how-to use the platform in Jupyter Notebook.
-
 # ------------------------------------------------------------------------------------------
 #
 #                            Welcome to Mundi Jupyter Notebook
@@ -12,10 +9,13 @@ Mundi library and use case of how-to use the platform in Jupyter Notebook.
 #          - only elements in 'work' directory can be saved.
 
 - Folders content:
-'/lib/'    : Mundi library. It is Read Only.
+'/lib/'    : Contains libraries. It is Read Only.
+             Mundi library. 
              Based on 'OWSLib' https://geopython.github.io/OWSLib/: Python package compliant 
              with Open Geospatial Consortium (OGC) web service (hence OWS) interface standards, 
              and their related content models.
+             CAMS (Copernicus Atmosphere Monitoring Service) library.
+             CMEMS (Copernicus Marine Environment Monitoring Service) library.
 
 '/public/' : Contains Notebook examples. It is Read and Executable Only.      
 
@@ -42,7 +42,29 @@ Mundi library and use case of how-to use the platform in Jupyter Notebook.
             | mundi_exceptions        | Examples of Mundi raised exception                 |            
             | mundi_video             | Just for fun!                                      |
             - ------------------------------------------------------------------------------
-
+            | mundi_country_polygon   | Example of how to get and visualize polygon,bbox   |
+            |                         | and a geojson file from a country name             |
+            | mundi_wms_city_polygon  | Example of how to get and visualize polygon, bbox  |
+            |                         | and a satellite image from a city name             |
+            | mundi_shapefile         | Example of how to create, read, and display a      |
+            |                         | shapefile on a map                                 |
+            - ------------------------------------------------------------------------------
+            |                         | CAMS web services. Discovery and usage examples:   |
+            |                         |                                                    |            
+            | cams_europe_services    | Usage examples of Web Map Service, Web Coverage    |
+            |                         | Service and Download API for Europe                |
+            | cams_ecmwfapi           | Usage example of ECMWF api to download and         |
+            |                         | display CAMS data                                  |
+            |                         |                                                    |
+            - ------------------------------------------------------------------------------
+            |                         | CMEMS web services. Examples of interaction with   |
+            |                         |                      CMEMS catalog products:       |
+            |                         |                                                    |            
+            | cmems_use_case          | Examples of how to download, read and display      |
+            |                         | CMEMS data using NetCDF (Network Common Data Form) |
+            |                         | files                                              |
+            - ------------------------------------------------------------------------------
+            
 '/work/'   : Personnal folder that will persist through Jupyter Notebook sessions. 
              Store anything you want to keep in that folder.
 
@@ -74,5 +96,3 @@ Shift + <right_mouse_button> : access to clipboard
 
 - Webography:
 Bounding box finder : http://bboxfinder.com
-
-
